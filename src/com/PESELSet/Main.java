@@ -10,18 +10,19 @@ public class Main {
     public static void main(String[] args) {
 
 
-        // zrobić zbiór który przyjmuje unikatowe wartości PESEL
-        // Creating a Set with PESEL numerals
+        //1. zrobić zbiór który przyjmuje unikatowe wartości PESEL
+        //2. wartości tego zbioru trzeba przemnożyć w taki sposób w jaki jest to opisane na necie
+        //3. Rezultat trzeba scastować na inty
 
-        Set<String> PeselList = new TreeSet<String>();
+        Set<Integer> PeselList = new TreeSet<Integer>();
 
-        PeselList = new HashSet<String>(Arrays.asList("8","8","1","1","2","7","1","1","3","1","7"));
+        PeselList = new HashSet<Integer>(Arrays.asList(8,8,1,1,2,7,1,1,3,1,7));
         //int foo = Integer.parseInt(PeselList);
-        for (String element : PeselList){
+        for (Integer element : PeselList){
             System.out.println(element);
         }
         if (PeselList.contains("8")) {
-            
+
 
         }
 
