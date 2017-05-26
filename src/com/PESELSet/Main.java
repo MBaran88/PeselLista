@@ -14,12 +14,17 @@ public class Main {
         // Creating a Set with PESEL numerals
 
         Set<String> PeselList = new TreeSet<String>();
+
         PeselList = new HashSet<String>(Arrays.asList("8","8","1","1","2","7","1","1","3","1","7"));
-        int foo = Integer.parseInt(PeselList);
+        //int foo = Integer.parseInt(PeselList);
+        for (String element : PeselList){
+            System.out.println(element);
+        }
+        if (PeselList.contains("8")) {
+            
 
+        }
 
-
-        System.out.println(PeselList);
     }
 
 
